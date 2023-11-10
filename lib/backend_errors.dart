@@ -17,6 +17,11 @@ abstract class BackEndErrors {
   static String get newPassword2 => _BackEndErrorsKeys.newPassword2.name;
 }
 
+class FailureModel {
+  late Map<String, dynamic> message;
+  FailureModel({required this.message});
+}
+
 abstract class FailureState {
   ///know if the gived param is a faliure state or not
   ///return type [bool] true if it's failure state .

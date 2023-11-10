@@ -1,4 +1,4 @@
-import 'package:custom_snack_bar/home.dart';
+import 'package:custom_snack_bar/features/reset_password/presentation/reset_password.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return ResponsiveSizer(
       builder: (p0, p1, p2) => MaterialApp(
         navigatorKey: navigatorKey,
-        home: const Home(),
+        home: const ResetPasswordView(),
       ),
     );
   }

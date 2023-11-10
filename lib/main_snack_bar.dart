@@ -16,12 +16,12 @@ class SnackBarContent extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-              color: color, borderRadius: BorderRadius.circular(.8 * w)),
-          padding: EdgeInsets.symmetric(horizontal: .1 * w, vertical: .1 * h),
-          margin: EdgeInsets.only(top: .3 * h),
+              color: color, borderRadius: BorderRadius.circular(.1 * w)),
+          padding: EdgeInsets.symmetric(horizontal: .1 * w, vertical: .01 * h),
+          margin: EdgeInsets.only(top: .03 * h),
           child: Row(
             children: [
-              SizedBox(width: 17 * w),
+              //SizedBox(width: 17 * w),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,14 +59,10 @@ class SnackBarContent extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(left: 2 * w),
+          margin: EdgeInsets.only(left: .2 * w),
           alignment: Alignment.topLeft,
-          child: Image.asset(
-            color == Colors.green
-                ? "SnackBarConstants.success"
-                : "SnackBarConstants.failure",
-            width: .15 * w,
-          ),
+          child: Icon(Icons.message),
+          width: .015 * w,
         )
       ],
     );
