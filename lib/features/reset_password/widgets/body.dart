@@ -21,6 +21,7 @@ class _ResetPasswordFormWidgetState extends State<ResetPasswordFormWidget> {
       child: Column(
         children: [
           const ResetPasswordFormFields(),
+          const SizedBox(height: 10),
           BlocConsumer<SetNewPasswordCubit, SetNewPasswordStates>(
             listener: (context, state) => _handleStates(state, context),
             builder: (context, state) => state is SetNewPasswordLoadingState
